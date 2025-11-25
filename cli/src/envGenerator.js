@@ -32,7 +32,7 @@ const getEnvDefinition = (envValues, isDockerCompose, dbPort, platformUrl) => {
     },
     "Next Auth config": {
       NEXTAUTH_SECRET: generateAuthSecret(),
-      NEXTAUTH_URL: "http://localhost:3000",
+      NEXTAUTH_URL: "http://localhost:3001",
     },
     "Auth providers (Use if you want to get out of development mode sign-in)": {
       GOOGLE_CLIENT_ID: "***",
@@ -48,7 +48,7 @@ const getEnvDefinition = (envValues, isDockerCompose, dbPort, platformUrl) => {
       REWORKD_PLATFORM_MAX_LOOPS: "${NEXT_PUBLIC_MAX_LOOPS}",
       REWORKD_PLATFORM_OPENAI_API_KEY:
         envValues.OpenAIApiKey || '"<change me>"',
-      REWORKD_PLATFORM_FRONTEND_URL: "http://localhost:3000",
+      REWORKD_PLATFORM_FRONTEND_URL: "http://localhost:3001",
       REWORKD_PLATFORM_RELOAD: true,
       REWORKD_PLATFORM_OPENAI_API_BASE: "https://api.openai.com/v1",
       REWORKD_PLATFORM_SERP_API_KEY: envValues.serpApiKey || '""',

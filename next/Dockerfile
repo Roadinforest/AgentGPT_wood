@@ -35,7 +35,7 @@ COPY entrypoint.sh /
 # Normalize line endings
 RUN dos2unix /entrypoint.sh
 
-EXPOSE 3000
+EXPOSE 3001
 
 ENTRYPOINT ["sh", "/entrypoint.sh"]
 CMD ["npm", "run", "dev"]
